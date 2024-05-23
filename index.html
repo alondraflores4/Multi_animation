@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <title>Canvas animation 2D</title>
+    <style>
+        .header-custom {
+            background-color: #ff69b4; /* Pink background */
+            color: white; /* White text */
+        }
+
+        .canvas-item {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header-custom h1 {
+            color: white;
+        }
+
+        .canvas-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .canvas-row {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        /* Estilo para el encabezado de la tabla */
+        .table-coordinates th {
+            background-color: #EA74FF;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-custom py-3">
+        <div class="container">
+            <h1 class="text-center">Introducción a las animaciones para IHC</h1>
+        </div>
+    </header>
+      
+    <main class="container flex-column mt-3 shadow rounded-3 p-3">
+        <div class="d-flex justify-content-center flex-row mb-3">
+            <h1>Animaciones 2D con canvas</h1>
+        </div>
+        <div class="d-flex flex-row shadow-sm mb-1 p-3 justify-content-around">
+            <div class="d-flex justify-content-center flex-column mb-3">
+                <h5 class="d-flex justify-content-center">Multiobjetos</h5>
+                <canvas class="border shadow" id="canvas"></canvas>
+            </div>
+            <div class="d-flex justify-content-center flex-column mb-3">
+                <h5 class="d-flex justify-content-center">Coordenadas</h5>
+                <table class="table table-bordered table-coordinates">
+                    <thead>
+                        <tr>
+                            <th>Círculo</th>
+                            <th>Coordenadas</th>
+                        </tr>
+                    </thead>
+                    <tbody id="coordinates-table">
+                        <!-- Filas para coordenadas de círculos -->
+                        <tr><td>1</td><td id="circle-1">X: 0, Y: 0</td></tr>
+                        <tr><td>2</td><td id="circle-2">X: 0, Y: 0</td></tr>
+                        <tr><td>3</td><td id="circle-3">X: 0, Y: 0</td></tr>
+                        <tr><td>4</td><td id="circle-4">X: 0, Y: 0</td></tr>
+                        <tr><td>5</td><td id="circle-5">X: 0, Y: 0</td></tr>
+                        <tr><td>6</td><td id="circle-6">X: 0, Y: 0</td></tr>
+                        <tr><td>7</td><td id="circle-7">X: 0, Y: 0</td></tr>
+                        <tr><td>8</td><td id="circle-8">X: 0, Y: 0</td></tr>
+                        <tr><td>9</td><td id="circle-9">X: 0, Y: 0</td></tr>
+                        <tr><td>10</td><td id="circle-10">X: 0, Y: 0</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center bg-light">
+        <div class="container pt-4">
+            <section class="mb-4">
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/alondraflores4?tab=repositories&q=&type=public&language=&sort=" target="_blank" role="button">
+                    <i class="fab fa-github"></i>
+                </a>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © Elaborado por:
+            <a class="text-dark" href="https://www.linkedin.com/in/alondra-flores-hern%C3%A1ndez-b6b577265/" target="_blank">Alondra Flores</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
+
